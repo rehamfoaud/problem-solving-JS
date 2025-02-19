@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+    <script>
+        function repeatString(number , string){
+           let newString = ""
+            for (i=0 ;i<= number;i++){
+                newString +=string
+            }
+            return newString 
+        }
+        console.log(repeatString(7 ,'java'))
+
+
+        // OR
+        
+        function repeatString( number ,string){
+            return string.repeat(number)
+        }
+        console.log(repeatString(7 ,'java'))
+    
+    
+    
+    </script>
+</body>
+</html>

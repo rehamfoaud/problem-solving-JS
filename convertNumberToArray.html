@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Convert-number-to-reversed-array 
+    //1-> change number to string   String()
+    //2->split  string t array      split()
+    //3-> change string to number    map()
+    // 4-> reverse the array         reverse()
+        function convertFunction(number){
+              return String(number)
+              .split("")
+              .map((x)=>Number(x))
+              .reverse()
+        }
+        console.log(convertFunction(1234567))
+
+    </script>
+</body>
+</html>

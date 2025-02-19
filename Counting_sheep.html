@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counting sheep</title>
+</head>
+<body>
+
+    
+    <script>
+        //counting sheep
+        function countingSheep(array){
+             let x = 0
+             array.map((m)=>{ 
+                if (m === true) x++
+            })
+             return x
+            }
+        console.log(countingSheep([true,false,true,true,true,false]))
+
+
+    </script>
+</body>
+</html>

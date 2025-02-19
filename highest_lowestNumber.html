@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+        function sum(Array){
+            if(Array == null ) return 0
+            let maxNum = Math.max(...Array) 
+            let minNum = Math.min(...Array)
+            // console.log(maxNum ,minNum)
+            let filterArray = Array.filter((x) => x !==maxNum && x!==minNum)
+            // console.log(filterArray)
+            let newArray = filterArray.reduce((acc , current)=>acc + current,0)
+            console.log(newArray)
+        }
+        sum([2,8,4,1,9,7,6,5,30])
+    </script>
+</body>
+</html>
